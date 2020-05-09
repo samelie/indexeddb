@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const idb = typeof window === "undefined"
-    ? null
+    ? self && self.indexedDB
     : window.indexedDB ||
         window.webkitIndexedDB ||
         window.mozIndexedDB ||
